@@ -7,40 +7,91 @@
     <!-- Tailwindcsss CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'button-primary': 'rgb(170, 240, 94)',
-                'button-secondary': 'rgba(170, 240, 94, 0.4)',
-                'black': 'rgb(30, 30, 30)',
-                'header-color': 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
-                'section-color': 'rgb(240, 240, 240)',
-                'concept-color': 'rgb(250, 170, 220)',
-                'design-color': 'rgb(242, 220, 115)',
-                'supervision-color': 'rgb(160, 220, 190)',
-                'budget-color': 'rgb(120, 180, 230)',
-              },
-              fontFamily: {
-                'manrope': ['Manrope', 'sans-serif']
-              }
-            }
-          }
-        }
-      </script>
-      <!-- DaisyUI CDN -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-      <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-      <!-- Fontawesome CDN -->
-      <script src="https://kit.fontawesome.com/a1e69acb00.js" crossorigin="anonymous"></script>
-
-
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "button-primary": "rgb(170, 240, 94)",
+              "button-secondary": "rgba(170, 240, 94, 0.4)",
+              black: "rgb(30, 30, 30)",
+              "header-color":
+                "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)",
+              "section-color": "rgb(240, 240, 240)",
+              "concept-color": "rgb(250, 170, 220)",
+              "design-color": "rgb(242, 220, 115)",
+              "supervision-color": "rgb(160, 220, 190)",
+              "budget-color": "rgb(120, 180, 230)",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/a1e69acb00.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body class="font-manrope">
-    <h1 class="text-5xl text-center">Rinterio <i class="fa-solid fa-arrow-right"></i></h1>
+    <!-- Header Section -->
+    <header class="w-10/12 mx-auto my-[50px]">
+      <nav>
+        <div class="navbar">
+          <div class="navbar-start">
+              <button class="btn btn-circle bg-button-primary">
+                <i class="fa-solid fa-arrow-right -rotate-45 text-2xl"></i>
+              </button>
+            <a class="btn btn-ghost text-4xl font-bold">
+                Rinterio</a>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl">
+              <li><a class="font-bold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end text-2xl">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl "></i>
+              </div>
+            <div class="hidden lg:flex items-center space-x-5">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="btn bg-button-primary rounded-[40px] text-2xl font-bold"
+                  >Book Consult <i class="fa-solid fa-circle-arrow-right -rotate-45"></i
+                ></a>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+
+    <main></main>
+
+    <footer></footer>
   </body>
 </html>
