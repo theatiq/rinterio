@@ -88,7 +88,7 @@
       <!-- Header Description -->
       <div class="hero w-10/12 mx-auto mb-10 py-10 flex flex-col">
         <img src="./assets/banner.png" alt="Image of a House" />
-        <h1 class="lg:w-10/12 text-3xl lg:text-6xl font-bold text-center">
+        <h1 class="lg:w-10/12 text-2xl lg:text-6xl font-bold text-center">
           A barn house of this design has a striking appearance
         </h1>
         <p class="lg:w-8/12 py-6 text-center">
@@ -107,12 +107,12 @@
     <main>
       <!-- About Us Section -->
       <section>
-        <div class="hero bg-base-200 min-h-screen">
-          <div class="hero-content flex flex-col lg:flex-row relative">
-            <div class="hidden lg:flex absolute z-10 -top-10 left-0">
+        <div class="hero bg-base-200">
+          <div class="hero-content pt-20 flex flex-col lg:flex-row relative">
+            <div class="hidden lg:flex absolute z-10 top-[20px] left-0">
               <img src="./assets/Vector.png" alt="" class="" />
             </div>
-            
+
             <div class="flex flex-col lg:w-1/2">
               <button
                 class="btn bg-white rounded-[40px] lg:w-[200px] text-2xl"
@@ -120,7 +120,9 @@
               >
                 <i class="fa-solid fa-arrow-right-long"></i> About Us
               </button>
-              <h1 class="text-2xl text-center lg:text-left lg:text-5xl font-bold">
+              <h1
+                class="text-2xl text-center lg:text-left lg:text-5xl font-bold"
+              >
                 We design thoughtful, liveable spaces
               </h1>
               <p class="py-6 text-center lg:text-left">
@@ -165,7 +167,7 @@
             </div>
 
             <div>
-              <img src="./assets/Rectangle.png" class="rounded-lg"/>
+              <img src="./assets/Rectangle.png" class="rounded-lg" />
             </div>
           </div>
         </div>
@@ -326,9 +328,7 @@
 
       <!-- Discuss Section -->
       <section class="pb-20">
-        <div
-          class="bg-[url('./assets/bg.jpg')] bg-cover bg-center w-full "
-        >
+        <div class="bg-[url('./assets/bg.jpg')] bg-cover bg-center w-full">
           <div class="hero w-10/12 mx-auto py-5 flex flex-col">
             <a class="btn bg-base-200 rounded-[40px] lg:text-2xl font-bold"
               ><i class="fa-solid fa-arrow-right-long"></i> Lets Connect
@@ -348,14 +348,16 @@
           <div class="hero-content lg:w-8/12 mx-auto">
             <div class="w-full">
               <form class="lg:mb-20">
-                <div class="flex flex-col lg:grid grid-cols-2 grid-rows-2 gap-10">  
-                <input
+                <div
+                  class="flex flex-col lg:grid grid-cols-2 grid-rows-2 gap-5"
+                >
+                  <input
                     type="text"
                     placeholder="First Name*"
                     class="input input-bordered rounded-[40px]"
                     required
                   />
-                  
+
                   <input
                     type="text"
                     placeholder="Last Name*"
@@ -375,13 +377,21 @@
                     required
                   />
                 </div>
-                  <br>
+                <br />
 
-                  <textarea class="textarea textarea-bordered rounded-[30px] w-full mb-10" rows="10" cols="50" placeholder="Enter your message here..."></textarea>
-                
-                  <button class="btn bg-button-primary rounded-[40px] w-full">Send Mail <i class="fa-solid fa-circle-arrow-right -rotate-45"></i
-                    ></button>
-                
+                <textarea
+                  class="textarea textarea-bordered rounded-[30px] w-full mb-5"
+                  rows="10"
+                  cols="50"
+                  placeholder="Enter your message here..."
+                ></textarea>
+
+                <button
+                  class="btn bg-button-primary text-2xl rounded-[40px] w-full"
+                >
+                  Send Mail
+                  <i class="fa-solid fa-circle-arrow-right -rotate-45"></i>
+                </button>
               </form>
             </div>
           </div>
@@ -389,6 +399,36 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer footer-center bg-black text-primary-content p-10">
+      <aside>
+        <div class="flex">
+          <button class="btn btn-circle bg-button-primary">
+            <i class="fa-solid fa-arrow-right -rotate-45 text-2xl"></i>
+          </button>
+          <a class="btn btn-ghost text-4xl font-bold"> Rinterio</a>
+        </div>
+        <p class="lg:w-8/12 mt-5">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        
+        <!-- <div class="navbar-center"> -->
+          <ul class="text-xl space-y-5 lg:flex gap-20 mt-5">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        <!-- </div> -->
+
+      </aside>
+      <nav class="my-5">
+        <a class="btn bg-button-primary rounded-[40px] text-2xl font-bold"
+        >Book Consult
+        <i class="fa-solid fa-circle-arrow-right -rotate-45"></i
+      ></a>
+      </nav>
+    </footer>
   </body>
 </html>
