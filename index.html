@@ -14,7 +14,7 @@
               clifford: "#da373d",
               "button-primary": "rgb(170, 240, 94)",
               "button-secondary": "rgba(170, 240, 94, 0.4)",
-              black: "rgb(30, 30, 30)",
+              "dark-color": "rgb(30, 30, 30)",
               "section-color": "rgb(240, 240, 240)",
               "concept-color": "rgb(250, 170, 220)",
               "design-color": "rgb(242, 220, 115)",
@@ -323,22 +323,69 @@
       </section>
 
       <!-- Discuss Section -->
-      <section class="pb-20 relative">
-      <div>
-        <img src="./assets/bg.jpg" alt="" class="w-full h-[1000px]">
-      </div>
-        <!-- Description Section -->
-        <div class="hero w-10/12 mx-auto py-10 flex flex-col absolute z-10 top-20 left-20">
-          <a class="btn bg-base-200 rounded-[40px] lg:text-2xl font-bold"
-            ><i class="fa-solid fa-arrow-right-long"></i> Lets Connect
-          </a>
-          <h1 class="lg:w-10/12 text-3xl lg:text-5xl font-bold text-center">
-            Let’s Discuss Next Project
-          </h1>
-          <p class="lg:w-6/12 py-6 text-center">
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents.
-          </p>
+      <section class="pb-20">
+        <div
+          class="bg-[url('./assets/bg.jpg')] bg-cover bg-center w-full h-screen"
+        >
+          <div class="hero w-10/12 mx-auto py-5 lg:py-20 flex flex-col">
+            <a class="btn bg-base-200 rounded-[40px] lg:text-2xl font-bold"
+              ><i class="fa-solid fa-arrow-right-long"></i> Lets Connect
+            </a>
+            <h1 class="lg:w-10/12 text-xl lg:text-6xl font-bold text-center">
+              Let’s Discuss Next Project
+            </h1>
+            <p class="lg:w-6/12 py-6 text-center">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <!-- Input section -->
+
+          <div class="hero-content">
+            <div class="card bg-base-100 w-full">
+              <form class="card-body">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    class="input input-bordered"
+                    required
+                  />
+                  
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    class="input input-bordered"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    class="input input-bordered"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="input input-bordered"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Write your message here"
+                    class="input input-bordered"
+                    required
+                  />
+                  
+                
+
+                <div class="form-control mt-6">
+                  <button class="btn bg-button-primary rounded-[40px]">Send Mail</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
