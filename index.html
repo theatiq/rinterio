@@ -325,9 +325,9 @@
       <!-- Discuss Section -->
       <section class="pb-20">
         <div
-          class="bg-[url('./assets/bg.jpg')] bg-cover bg-center w-full h-screen"
+          class="bg-[url('./assets/bg.jpg')] bg-cover bg-center w-full "
         >
-          <div class="hero w-10/12 mx-auto py-5 lg:py-20 flex flex-col">
+          <div class="hero w-10/12 mx-auto py-5 flex flex-col">
             <a class="btn bg-base-200 rounded-[40px] lg:text-2xl font-bold"
               ><i class="fa-solid fa-arrow-right-long"></i> Lets Connect
             </a>
@@ -343,46 +343,43 @@
 
           <!-- Input section -->
 
-          <div class="hero-content">
-            <div class="card bg-base-100 w-full">
-              <form class="card-body">
-                  <input
+          <div class="hero-content lg:w-8/12 mx-auto">
+            <div class="w-full">
+              <form class="">
+                <div class="flex flex-col lg:grid grid-cols-2 grid-rows-2 gap-10">  
+                <input
                     type="text"
-                    placeholder="First Name"
-                    class="input input-bordered"
+                    placeholder="First Name*"
+                    class="input input-bordered rounded-[40px]"
                     required
                   />
                   
                   <input
                     type="text"
-                    placeholder="Last Name"
-                    class="input input-bordered"
+                    placeholder="Last Name*"
+                    class="input input-bordered rounded-[40px]"
                     required
                   />
                   <input
                     type="tel"
-                    placeholder="Phone Number"
-                    class="input input-bordered"
+                    placeholder="Phone Number*"
+                    class="input input-bordered rounded-[40px]"
                     required
                   />
                   <input
                     type="email"
-                    placeholder="Email Address"
-                    class="input input-bordered"
+                    placeholder="Email Address*"
+                    class="input input-bordered rounded-[40px]"
                     required
                   />
-                  <input
-                    type="text"
-                    placeholder="Write your message here"
-                    class="input input-bordered"
-                    required
-                  />
-                  
-                
-
-                <div class="form-control mt-6">
-                  <button class="btn bg-button-primary rounded-[40px]">Send Mail</button>
                 </div>
+                  <br>
+
+                  <textarea class="textarea textarea-bordered rounded-[30px] w-full mb-10" rows="10" cols="50" placeholder="Enter your message here..."></textarea>
+                
+                  <button class="btn bg-button-primary rounded-[40px] w-full">Send Mail <i class="fa-solid fa-circle-arrow-right -rotate-45"></i
+                    ></button>
+                
               </form>
             </div>
           </div>
