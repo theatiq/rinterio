@@ -51,15 +51,15 @@
   <body class="font-manrope">
     <!-- Header Section -->
     <header class="bg-gradient-to-b from-gray-50 to-white">
-      <div class="lg:w-10/12 mx-auto navbar py-10">
-        <div class="navbar-start">
+      <div class="lg:w-11/12 mx-auto navbar py-10">
+        <div class="navbar-start w-1/2">
           <button class="btn btn-circle bg-button-primary">
             <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
           </button>
           <a class="btn btn-ghost text-4xl font-bold"> Rinterio</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal text-xl">
+        <div class="navbar-center hidden lg:flex w-1/2">
+          <ul class="menu menu-horizontal text-[15px]">
             <li><a class="font-bold">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
@@ -67,11 +67,11 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end text-xl">
+        <div class="navbar-end text-xl w-1/2">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <i class="fa-solid fa-bars text-2xl"></i>
           </div>
-          <div class="hidden lg:flex items-center space-x-5">
+          <div class="hidden lg:flex items-center space-x-2">
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-cart-shopping"></i>
             <a class="btn bg-button-primary rounded-[40px] text-2xl font-bold"
@@ -106,20 +106,18 @@
       <section>
         <div class="hero bg-base-200">
           <div class="hero-content pt-20 flex flex-col lg:flex-row relative">
-            <div class="hidden lg:flex absolute z-10 top-[20px] left-0">
+            <div class="hidden lg:flex absolute z-10 top-[60px] left-0">
               <img src="./assets/Vector.png" alt="" class="" />
             </div>
 
             <div class="flex flex-col lg:w-1/2">
               <button
-                class="btn bg-white rounded-[40px] lg:w-[200px] text-2xl"
+                class="btn bg-white rounded-[40px] lg:w-[200px] text-xl"
                 type="button"
               >
                 <i class="fa-solid fa-arrow-right-long"></i> About Us
               </button>
-              <h1
-                class="text-2xl text-center lg:text-left lg:text-5xl font-bold"
-              >
+              <h1 class="text-2xl text-center lg:text-left font-bold">
                 We design thoughtful, liveable spaces
               </h1>
               <p class="py-6 text-center lg:text-left">
@@ -263,7 +261,9 @@
         <!-- Portfolio Section -->
         <div class="w-10/12 mx-auto lg:grid grid-cols-4 grid-rows-2 gap-5">
           <!-- card-1 -->
-          <div class="hero bg-base-100 border rounded-lg col-span-3 order-1 lg:order-1">
+          <div
+            class="hero bg-base-100 border rounded-lg col-span-3 order-1 lg:order-1"
+          >
             <div class="hero-content flex-col lg:flex-row">
               <img src="./assets/img1.png" class="rounded-lg" />
               <div>
@@ -289,14 +289,18 @@
             </div>
           </div>
           <!-- card-3 -->
-          <div class="lg:hidden hero bg-base-100 border rounded-lg order-3 lg:order-3">
+          <div
+            class="lg:hidden hero bg-base-100 border rounded-lg order-3 lg:order-3"
+          >
             <div class="hero-content flex-col lg:flex-row">
               <img src="./assets/img5.png" class="rounded-lg" />
             </div>
           </div>
 
           <!-- card-4 -->
-          <div class="hero bg-base-100 border rounded-lg col-span-2 order-4 lg:order-5">
+          <div
+            class="hero bg-base-100 border rounded-lg col-span-2 order-4 lg:order-5"
+          >
             <div class="hero-content flex-col lg:flex-row">
               <img src="./assets/img4.png" class="rounded-lg" />
               <div>
@@ -315,17 +319,12 @@
             </div>
           </div>
 
-
           <!-- card-5 -->
           <div class="hero bg-base-100 border rounded-lg order-5 lg:order-4">
             <div class="hero-content flex-col lg:flex-row">
               <img src="./assets/img3.png" class="rounded-lg" />
             </div>
           </div>
-
-
-
-
 
           <!-- card-6 -->
           <div class="hero bg-base-100 border rounded-lg order-6 lg:order-6">
@@ -334,7 +333,67 @@
             </div>
           </div>
         </div>
-        
+      </section>
+      <!-- Details of Upcoming Projects -->
+      <section class="pb-20">
+        <!-- Description Section -->
+        <div class="hero w-10/12 mx-auto py-5 flex flex-col">
+          <a class="btn bg-base-200 rounded-[40px] lg:text-2xl font-bold"
+            ><i class="fa-solid fa-arrow-right-long"></i> Upcoming Projects
+          </a>
+          <h1 class="lg:w-10/12 text-2xl lg:text-5xl font-bold text-center">
+            Some Exciting Upcoming Projects
+          </h1>
+          <p class="lg:w-6/12 py-6 text-center">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Upcoming image Section -->
+        <div class="w-10/12 mx-auto lg:grid grid-cols-4 grid-rows-2 gap-5">
+          <!-- card-1 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/1.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          <!-- card-2 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/2.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          <!-- card-3 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/3.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          <!-- card-4 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/4.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          <!-- card-5 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/5.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          <!-- card-6 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/6.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          <!-- card-7 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/7.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          <!-- card-8 -->
+          <div class="hero bg-base-100 border rounded-lg flex flex-col">
+              <img src="./assets/8.upcoming.webp" class="rounded-lg" />
+              <h1 class="text-center text-2xl font-bold">Dhanmondi Lake View</h1>
+          </div>
+          
+        </div>
+
       </section>
 
       <!-- Discuss Section -->
